@@ -12,8 +12,9 @@ namespace Uzduotis01
              * kuri išvestų žodį “Labas” 
              * ir jūsų vardą toje pačioje eilutėje.
              */
-            
-            Console.WriteLine("Labas Martynai");
+
+            string vardas = "Martynas";
+            Console.WriteLine($"Labas {vardas}");
         }
     }
 }
