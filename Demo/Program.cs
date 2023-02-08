@@ -23,6 +23,16 @@ namespace Demo
             Console.WriteLine(); // tuščia eilutė
             Console.WriteLine("Naują eilutę galima \n įterpti ir taip");
             Console.WriteLine();
+
+            int sudetisPriesDaugyba = (3 + 3) * 3;
+            Console.WriteLine(3 + 3 * 3);
+
+            int dalybaSveikojiDalis = 7 / 3;
+            int dalybaLiekana = 7 % 3;
+            Console.WriteLine($"Dalyba 7 iš 3, sveikoji dalis: {dalybaSveikojiDalis}, liekana: {dalybaLiekana}");
+
+            double dalybaRealioji = (double) 7 / 3;
+            Console.WriteLine($"Reali dalyba 7 iš 3: {dalybaRealioji}");
         }
     }
 }
