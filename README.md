@@ -1,0 +1,1 @@
+# 20230119VCSATSVAK_programavimas
