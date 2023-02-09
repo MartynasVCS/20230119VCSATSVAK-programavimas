@@ -6,15 +6,36 @@ namespace Uzduotis01
     {
         static void Main(string[] args)
         {
-            /* 1 punktas
-             * 
-             * Parašykite programą, 
-             * kuri išvestų žodį “Labas” 
-             * ir jūsų vardą toje pačioje eilutėje.
-             */
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            string vardas = "Martynas";
-            Console.WriteLine($"Labas {vardas}");
+            // 1 punktas
+            string name = "Martynas";
+            Console.WriteLine("Labas " + name);
+            Console.WriteLine();
+
+            // 2 punktas
+            int age = 34;
+            Console.WriteLine("Ivestas amzius: " + age);
+            Console.WriteLine();
+
+            // 3 punktas
+            int number = 25;
+            // Pirmas budas
+            Console.Write(number);
+            Console.Write(number);
+            Console.Write(number);
+            Console.Write(number);
+            Console.WriteLine(number);
+
+            // Antras budas
+            Console.WriteLine("{0}{1}{2}{3}{4}", number, number, number, number, number);
+
+            // Trecias budas
+            Console.WriteLine("{0}{0}{0}{0}{0}", number);
+            Console.WriteLine();
+
+            // 4 punktas
+            Console.WriteLine("{0} {0} {0} {0} {0}", number);
         }
     }
 }
