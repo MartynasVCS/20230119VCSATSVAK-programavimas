@@ -31,8 +31,31 @@ namespace IsvedimasDemo
             int dalybaLiekana = 7 % 3;
             Console.WriteLine($"Dalyba 7 iš 3, sveikoji dalis: {dalybaSveikojiDalis}, liekana: {dalybaLiekana}");
 
+            // Dokumentacija apie explicit conversion
+            // https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions
             double dalybaRealioji = (double) 7 / 3;
             Console.WriteLine($"Reali dalyba 7 iš 3: {dalybaRealioji}");
+
+            // Kintamjo reikšmės didinimas
+            int skaicius = 5;
+
+            // Žemiau pateiktos eilutės daro tą patį: padidina esamą reikšmę penketu
+            skaicius = skaicius + 5;
+            skaicius += 5;
+
+            // Kintamojo didinimas/mažinimas vienetu
+            Console.WriteLine();
+            Console.WriteLine(skaicius);
+            Console.WriteLine(skaicius++);
+            Console.WriteLine(skaicius++);
+            Console.WriteLine(skaicius);
+
+            skaicius = 15;
+            Console.WriteLine();
+            Console.WriteLine(skaicius);
+            Console.WriteLine(++skaicius);
+            Console.WriteLine(++skaicius);
+            Console.WriteLine(skaicius);
         }
     }
 }
