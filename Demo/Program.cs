@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Demo
+namespace IsvedimasDemo
 {
     internal class Program
     {

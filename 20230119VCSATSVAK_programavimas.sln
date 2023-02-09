@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kintamieji", "Kintamieji\Ki
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Isvedimas", "02 Isvedimas", "{D6CC07C8-A46E-4637-B29D-DAAB5E6CC315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{19F0EE52-5571-4714-9BB8-74427C0C1159}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsvedimasDemo", "Demo\IsvedimasDemo.csproj", "{19F0EE52-5571-4714-9BB8-74427C0C1159}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uzduotis01", "Uzduotis01\Uzduotis01.csproj", "{2AE17D11-79B9-4ADB-B2CF-AF2C4F2578D6}"
 EndProject
