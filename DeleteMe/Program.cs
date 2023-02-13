@@ -10,6 +10,8 @@ namespace DeleteMe
     {
         static void Main(string[] args)
         {
+
+            int kazkoksKodas = 42;
         }
     }
 }
