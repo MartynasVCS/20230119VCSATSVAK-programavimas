@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace ForDemo
 {
@@ -49,7 +48,6 @@ namespace ForDemo
                 {
                     suma += i;
                 }
-                
             }
             
             Console.WriteLine(suma);
