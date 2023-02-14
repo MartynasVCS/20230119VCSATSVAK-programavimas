@@ -74,7 +74,6 @@ namespace MasyvaiDemo
                 suma += pazymiai[i];
             }
             Console.WriteLine($"Pažymių suma: {suma}");
-
         }
     }
 }
