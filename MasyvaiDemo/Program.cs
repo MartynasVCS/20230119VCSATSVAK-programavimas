@@ -69,11 +69,64 @@ namespace MasyvaiDemo
 
             // Sumos algoritmas
             int suma = 0;
+
+            // Naudojant for ciklą
             for (int i = 0; i < pazymiai.Length; i++)
             {
                 suma += pazymiai[i];
             }
             Console.WriteLine($"Pažymių suma: {suma}");
+
+            // Naudojant foreach
+            suma = 0;
+            foreach (int pazymys in pazymiai)
+            {
+                suma += pazymys;
+            }
+            Console.WriteLine($"Pažymių suma: {suma}");
+
+            // Suma be ciklo
+            Console.WriteLine($"Pažymių suma: {pazymiai.Sum()}");
+
+            // Min/Max algoritmas
+            int didziausiasPazymys = pazymiai[0];
+            for (int i = 0; i < pazymiai.Length; i++)
+            {
+                if (i > didziausiasPazymys)
+                {
+                    didziausiasPazymys = i;
+                }
+            }
+            Console.WriteLine($"Didžiausias pažymys: {didziausiasPazymys}");
+
+            // Min/Max paprastuoju būdu
+            Console.WriteLine($"Didžiausias pažymys: {pazymiai.Max()}");
+            Console.WriteLine($"Mažiausias pažymys: {pazymiai.Min()}");
+            Console.WriteLine($"Pažymių vidurkis: {pazymiai.Average()}");
+
+            // Kas daugiau '3 Paskaita 45 skaidrė'
+
+            if ('#' > '%')
+            {
+                Console.WriteLine("'#' yra daugiau už '%'");
+            } else
+            {
+                Console.WriteLine("'%' yra daugiau už '#'");
+            }
+
+            Console.WriteLine(Convert.ToInt32('#'));
+            Console.WriteLine(Convert.ToInt32('%'));
+
+            // Užduotis 25 pavyzdys
+            string ivedimas = Console.ReadLine();
+            string[] ivedimasIsskaidytas = ivedimas.Split(' ');
+            int[] ivedimasSkaiciai = new int[ivedimasIsskaidytas.Length];
+            for (int i = 0; i < ivedimasSkaiciai.Length; i++)
+            {
+                ivedimasSkaiciai[i] = Convert.ToInt32(ivedimasIsskaidytas[i]);
+            }
+
+            Console.WriteLine(ivedimas);
         }
     }
 }
