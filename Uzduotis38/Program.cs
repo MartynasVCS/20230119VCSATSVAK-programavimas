@@ -12,42 +12,51 @@ namespace Uzduotis38
              * ir paveldinčia klase Gyvate. 
              * 
              * Paveldinčioje klasėje turi būti metodas, 
-             * kuris išveda visus klasės kintamuosius į ekraną. 
+             * kuris išveda visus klasės kintamuosius į ekraną.
              * 
-             * Bazinės klasės konstruktorių 
-             * panaudokite paveldinčioje klasėje. 
+             * Bazinės klasės konstruktorių panaudokite paveldinčioje klasėje.
              * 
-             * Išveskite paveldinčios klasės kintamuosius 
-             * į ekraną.
+             * Išveskite paveldinčios klasės kintamuosius į ekraną.
              */
 
-            Gyvate zaltys = new Gyvate("Žaltys", 4.5);
-            zaltys.Spausdinti();
+            Gyvate zaltys = new Gyvate("Žaltys", 15, false);
+            zaltys.Informacija();
         }
     }
 
     internal class Gyvunas
     {
-        protected string pavadinimas;
+        protected string pavadinimas { get; set; }
+        protected int amzius { get; set; }
 
-        internal Gyvunas(string pavadinimas)
+        protected Gyvunas(string pavadinimas, int amzius)
         {
             this.pavadinimas = pavadinimas;
+            this.amzius = amzius;
+        }
+
+        public virtual void Informacija()
+        {
+            Console.WriteLine("Informacija apie gyvūną: ");
+            Console.WriteLine($"   Pavadinimas: {pavadinimas}");
+            Console.WriteLine($"   Amžius: {amzius}");
         }
     }
 
     internal class Gyvate : Gyvunas
     {
-        protected double ilgis;
+        internal bool arNuodinga { get; set; }
 
-        internal Gyvate(string pavadinimas, double ilgis) : base(pavadinimas)
+        internal Gyvate(string pavadinimas, int amzius, bool arNuodinga) : base(pavadinimas, amzius)
         {
-            this.ilgis = ilgis;
+            this.arNuodinga = arNuodinga;
         }
 
-        internal void Spausdinti()
+        public override void Informacija()
         {
-            Console.WriteLine($"Gyvūno pavadinimas: {pavadinimas}, gyvūno ilgis: {ilgis}");
+            base.Informacija();
+            Console.WriteLine($"   Ar nuodinga: {arNuodinga}");
+            Console.WriteLine();
         }
     }
 }
